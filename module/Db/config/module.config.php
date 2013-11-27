@@ -6,7 +6,7 @@ return [
     'doctrine' => [
         'driver' => [
             'db_driver' => [
-                'class' => 'Doctrine\Mapping\Driver\XmlDriver',
+                'class' => 'Doctrine\ORM\Mapping\Driver\XmlDriver',
                 'paths' => [__DIR__ . '/xml'],
             ],
            'orm_default' => [
