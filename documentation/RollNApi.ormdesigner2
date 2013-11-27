@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<orm-designer version="2.2.1.736" name="RollNApi" mvc="Without MVC" orm="Doctrine2" uuid="09c94d6b-1592-49e6-8ffa-58dd6621f1e4">
+  <module name="Db" import-format="Doctrine2Xml" import-path="../module/Db/config/xml" uuid="30851194-2020-4670-afa0-aba4a3feb3e9">
+    <orm-attributes>
+      <attribute name="namespace">Db\Entity</attribute>
+    </orm-attributes>
+  </module>
+  <visual-data>
+    <project uuid="09c94d6b-1592-49e6-8ffa-58dd6621f1e4" size-x="0" size-x2="328" size-y="0" size-y2="285"/>
+    <module uuid="30851194-2020-4670-afa0-aba4a3feb3e9" bk-color="4294638066" position-x="61" position-y="72" size-x="11" size-x2="217" size-y="22" size-y2="163"/>
+  </visual-data>
+</orm-designer>
