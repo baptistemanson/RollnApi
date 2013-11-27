@@ -6,7 +6,7 @@ use Zend\Loader\StandardAutoloader;
 use Doctrine\ORM\Tools\EntityGenerator;
 use Doctrine\ORM\Tools\DisconnectedClassMetadataFactory;
 
-class DbAsEntityAutoloader extends StandardAutoloader
+class DbEntityAutoloader extends StandardAutoloader
 {
     public function loadClass($className, $type)
     {
@@ -21,7 +21,7 @@ class DbAsEntityAutoloader extends StandardAutoloader
 
         $generator = new EntityGenerator;
         $generator->setGenerateStubMethods(true);
-        $generator->setClassToExtend('DbAs\Entity\AbstractEntity');
+        $generator->setClassToExtend('Db\Entity\AbstractEntity');
 
         eval('?>' . $generator->generateEntityClass($metadata));
 
