@@ -6,7 +6,7 @@
     </orm-attributes>
   </module>
   <visual-data>
-    <project uuid="09c94d6b-1592-49e6-8ffa-58dd6621f1e4" size-x="0" size-x2="328" size-y="0" size-y2="285"/>
-    <module uuid="30851194-2020-4670-afa0-aba4a3feb3e9" bk-color="4294638066" position-x="61" position-y="72" size-x="11" size-x2="217" size-y="22" size-y2="163"/>
+    <project uuid="09c94d6b-1592-49e6-8ffa-58dd6621f1e4" size-x="0" size-x2="809" size-y="0" size-y2="633"/>
+    <module uuid="30851194-2020-4670-afa0-aba4a3feb3e9" bk-color="4294638066" position-x="61" position-y="72" size-x="11" size-x2="713" size-y="22" size-y2="527"/>
   </visual-data>
 </orm-designer>
