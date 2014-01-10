@@ -1,0 +1,21 @@
+#!/bin/bash
+cd ${0%/*}/..
+
+        echo "---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~--"
+        echo "  Populating Database." 
+        echo "---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~--"
+        ./vendor/bin/doctrine-module data-fixture:import
+
+        if [[ "$?" != "0" ]]
+        then
+            echo "Unable to generate random data using fixture. "
+            echo "  1. Make sure you're using the latest version of the app (git pull)."
+            echo "  2. Make sure you have all dependencies installed (composer install)."
+            echo "  3. Try manually truncating tables."
+            exit 1;
+        fi
+
+        echo 
+        echo "---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~--"
+        echo " The database is now filled with sample data."
+        echo "---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~--"
