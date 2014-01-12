@@ -26,10 +26,13 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-develop",
-        "rwoverdijk/assetmanager": "dev-master",
-        "zfcampus/zf-apigility": "dev-master",
-        "zfcampus/zf-configuration": "dev-master",
-	"soliantconsulting/soliantconsulting-apigility": "dev-master"
+        "rwoverdijk/assetmanager": "~1.3",
+        "zfcampus/zf-apigility": "1.0.x-dev",
+        "zfcampus/zf-configuration": "1.0.x-dev",
+        "zfcampus/zf-apigility-doctrine": "dev-master",
+        "doctrine/doctrine-orm-module": "*",
+        "doctrine/doctrine-mongo-odm-module": "*"
+
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
