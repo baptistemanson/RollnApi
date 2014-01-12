@@ -37,12 +37,6 @@ class Module
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),
             ),
-
-            'Db\Loader\DbEntityAutoloader' => array(
-                'namespaces' => array(
-                    'Db\Entity' => __DIR__,
-                )
-            ),
         );
     }
 }
