@@ -22,7 +22,6 @@ return array(
         'DoctrineModule',
         'DoctrineORMModule',
         'Db',
-        'DbApi'
         ),
     'module_listener_options' => array(
         'module_paths' => array(

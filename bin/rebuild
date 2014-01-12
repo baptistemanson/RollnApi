@@ -5,9 +5,9 @@ if [[ ! -f "config/autoload/local.php" ]]
 then
     echo "---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~--"
     echo "The application needs local configuration."
-    echo "  1. cd config/autoload"
-    echo "  2. cp local.php.dist local.php"
-    echo "  3. Create an empty database"
+    echo "  1. Create an empty database"
+    echo "  2. cd config/autoload"
+    echo "  3. cp local.php.dist local.php"
     echo "  4. Edit local.php with database credentials"
     echo "  5. Run rebuild script again: ./bin/rebuild"
     echo "---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~---~--"
