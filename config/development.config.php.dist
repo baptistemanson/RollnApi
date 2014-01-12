@@ -9,7 +9,7 @@ return array(
     'modules' => array(
         'ZFTool',
         'ZF\Apigility\Admin',
-        'SoliantConsulting\Apigility',
+        'ZF\Apigility\Doctrine',
     ),
     // development time configuration globbing
     'module_listener_options' => array(
