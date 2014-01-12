@@ -3,6 +3,10 @@
 namespace Db;
 
 return [
+    'data-fixture' => [
+        'Db_fixture' => __DIR__ . '/../src/Db/Fixture',
+    ],
+
     'doctrine' => [
         'driver' => [
             'db_driver' => [

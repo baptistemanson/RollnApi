@@ -21,6 +21,7 @@ return array(
         'ZF\Versioning',
         'DoctrineModule',
         'DoctrineORMModule',
+        'DoctrineDataFixtureModule',
         'Db',
         ),
     'module_listener_options' => array(
