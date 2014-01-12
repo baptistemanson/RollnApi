@@ -72,6 +72,7 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
+            'Application\Controller\Application' => 'Application\Controller\ApplicationController',
             'Application\Controller\DevelopmentMode' => 'Application\Controller\DevelopmentModeController',
         ),
     ),
@@ -113,6 +114,16 @@ return array(
                         ),
                     ),
                 ),
+                'drop' => array(
+                    'options' => array(
+                        'route' => 'drop',
+                        'defaults' => array(
+                            'controller' => 'Application\Controller\Application',
+                            'action'     => 'drop',
+                        ),
+                    ),
+                ),
+
             ),
         ),
     ),
