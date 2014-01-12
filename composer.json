@@ -33,9 +33,7 @@
         "doctrine/doctrine-orm-module": "*",
         "doctrine/doctrine-mongo-odm-module": "*",
         "hounddog/doctrine-data-fixture-module": "0.0.*",
-        "fzaninotto/faker": "dev-master"
-    },
-    "require-dev": {
+        "fzaninotto/faker": "dev-master",
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
         "zfcampus/zf-apigility-admin": "dev-master",
