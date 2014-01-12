@@ -21,8 +21,8 @@ return array(
         'ZF\Versioning',
         'DoctrineModule',
         'DoctrineORMModule',
+        'DoctrineDataFixtureModule',
         'Db',
-        'DbApi'
         ),
     'module_listener_options' => array(
         'module_paths' => array(
