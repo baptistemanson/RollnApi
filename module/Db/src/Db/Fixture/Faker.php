@@ -33,7 +33,8 @@ class Faker implements FixtureInterface
         $this->faker = $generator = \Faker\Factory::create();
         $populator = new \Faker\ORM\Doctrine\Populator($generator, $manager);
 
-#        $populator->addEntity('Db\Entity\Name', 10);
+        $populator->addEntity('Db\Entity\Artist', 100);
+        $populator->addEntity('Db\Entity\Album', 1000);
 
         $populator->execute();
     }
