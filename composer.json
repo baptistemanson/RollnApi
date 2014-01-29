@@ -3,6 +3,9 @@
     "description": "Skeleton Application for Apigility",
     "type": "library",
     "license": "BSD-3-Clause",
+    "config": {
+        "process-timeout": 900
+    },
     "keywords": [
         "api",
         "apigility",
