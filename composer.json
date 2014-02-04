@@ -34,7 +34,6 @@
         "zfcampus/zf-configuration": "1.0.x-dev",
         "zfcampus/zf-apigility-doctrine": "dev-master",
         "doctrine/doctrine-orm-module": "*",
-        "doctrine/doctrine-mongo-odm-module": "*",
         "hounddog/doctrine-data-fixture-module": "0.0.*",
         "fzaninotto/faker": "dev-master",
         "zendframework/zftool": "dev-master",
