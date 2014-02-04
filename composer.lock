@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f53e624f30c676e3b299d9bf293b95db",
+    "hash": "4de8d6d844a1ce0b75a2ad025a44c947",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -11,16 +11,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bshaffer/oauth2-server-php.git",
-                "reference": "dfbc7b4e2db672f084fd22e8b8a67b166a9d24c7"
+                "reference": "651337268bd2bdacec1e63a53f9ab244a487891e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/dfbc7b4e2db672f084fd22e8b8a67b166a9d24c7",
-                "reference": "dfbc7b4e2db672f084fd22e8b8a67b166a9d24c7",
+                "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/651337268bd2bdacec1e63a53f9ab244a487891e",
+                "reference": "651337268bd2bdacec1e63a53f9ab244a487891e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
+            },
+            "suggest": {
+                "predis/predis": "Required to use the Redis storage engine",
+                "thobbs/phpcassa": "Required to use the Cassandra storage engine"
             },
             "type": "library",
             "autoload": {
@@ -34,9 +38,9 @@
             ],
             "authors": [
                 {
-                    "name": "Brent Shaffer",
+                    "name": "العاب",
                     "email": "bshafs@gmail.com",
-                    "homepage": "http://brentertainment.com"
+                    "homepage": "http://astaza.com"
                 }
             ],
             "description": "OAuth2 Server for PHP",
@@ -46,7 +50,7 @@
                 "oauth",
                 "oauth2"
             ],
-            "time": "2014-01-26 00:00:16"
+            "time": "2014-02-02 01:39:46"
         },
         {
             "name": "doctrine/annotations",
@@ -54,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "a11349d39d85bef75a71bd69bd604ac4fb993f03"
+                "reference": "218d670dd2fbb96c515e2fb4f8f7104ae4d73edb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/a11349d39d85bef75a71bd69bd604ac4fb993f03",
-                "reference": "a11349d39d85bef75a71bd69bd604ac4fb993f03",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/218d670dd2fbb96c515e2fb4f8f7104ae4d73edb",
+                "reference": "218d670dd2fbb96c515e2fb4f8f7104ae4d73edb",
                 "shasum": ""
             },
             "require": {
@@ -86,7 +90,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -118,7 +122,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2013-12-20 21:39:07"
+            "time": "2014-02-03 22:09:20"
         },
         {
             "name": "doctrine/cache",
@@ -180,7 +184,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -200,12 +204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "e6d8f1240e10f268c8e8c30e9e88a12853f84695"
+                "reference": "b99c5c46c87126201899afe88ec490a25eedd6a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/e6d8f1240e10f268c8e8c30e9e88a12853f84695",
-                "reference": "e6d8f1240e10f268c8e8c30e9e88a12853f84695",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/b99c5c46c87126201899afe88ec490a25eedd6a2",
+                "reference": "b99c5c46c87126201899afe88ec490a25eedd6a2",
                 "shasum": ""
             },
             "require": {
@@ -247,7 +251,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -260,7 +264,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2014-01-01 23:58:38"
+            "time": "2014-02-03 23:07:43"
         },
         {
             "name": "doctrine/common",
@@ -268,12 +272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "c94d6ff79e25418b1225e187c782bf4742f23a8b"
+                "reference": "9a7e20e779360f3b8a02c27a89d47d5a6fdce8d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/c94d6ff79e25418b1225e187c782bf4742f23a8b",
-                "reference": "c94d6ff79e25418b1225e187c782bf4742f23a8b",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/9a7e20e779360f3b8a02c27a89d47d5a6fdce8d1",
+                "reference": "9a7e20e779360f3b8a02c27a89d47d5a6fdce8d1",
                 "shasum": ""
             },
             "require": {
@@ -335,7 +339,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2013-09-07 10:20:35"
+            "time": "2014-02-03 23:31:47"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -343,20 +347,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "d5d0f7d9743df904c1e88f48dbc091b91c23d877"
+                "reference": "83a910f62b01715f3ed7317f5a4996417a698177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/d5d0f7d9743df904c1e88f48dbc091b91c23d877",
-                "reference": "d5d0f7d9743df904c1e88f48dbc091b91c23d877",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/83a910f62b01715f3ed7317f5a4996417a698177",
+                "reference": "83a910f62b01715f3ed7317f5a4996417a698177",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": ">=2.2,<2.5-dev",
+                "doctrine/common": "~2.2",
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "doctrine/orm": ">=2.2,<2.5-dev"
+                "doctrine/orm": "~2.2"
             },
             "suggest": {
                 "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
@@ -380,7 +384,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -391,7 +395,7 @@
             "keywords": [
                 "database"
             ],
-            "time": "2014-01-24 15:18:31"
+            "time": "2014-02-03 22:07:07"
         },
         {
             "name": "doctrine/dbal",
@@ -549,79 +553,6 @@
             "time": "2014-01-24 17:30:36"
         },
         {
-            "name": "doctrine/doctrine-mongo-odm-module",
-            "version": "0.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/DoctrineMongoODMModule.git",
-                "reference": "588f5ab85ea6294e7f542e22762fd44c9918fe62"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMongoODMModule/zipball/588f5ab85ea6294e7f542e22762fd44c9918fe62",
-                "reference": "588f5ab85ea6294e7f542e22762fd44c9918fe62",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/doctrine-module": "0.*",
-                "doctrine/mongodb-odm": "1.*",
-                "php": ">=5.3.3",
-                "zendframework/zendframework": "2.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "DoctrineMongoODMModule\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kyle Spraggs",
-                    "email": "theman@spiffyjr.me",
-                    "homepage": "http://www.spiffyjr.me/"
-                },
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com",
-                    "homepage": "http://marco-pivetta.com/",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Evan Coury",
-                    "email": "me@evancoury.com",
-                    "homepage": "http://blog.evan.pro/"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@hotmail.com"
-                },
-                {
-                    "name": "Tim Roediger",
-                    "email": "superdweebie@gmail.com",
-                    "homepage": "http://superdweebie.com"
-                }
-            ],
-            "description": "Zend Framework 2 Module that provides Doctrine MongoDB ODM functionality",
-            "homepage": "http://www.doctrine-project.org/",
-            "keywords": [
-                "doctrine",
-                "module",
-                "mongodb",
-                "odm",
-                "zf2"
-            ],
-            "time": "2012-12-15 16:20:00"
-        },
-        {
             "name": "doctrine/doctrine-orm-module",
             "version": "dev-master",
             "source": {
@@ -757,7 +688,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -816,9 +747,9 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -831,167 +762,17 @@
             "time": "2013-12-20 21:39:00"
         },
         {
-            "name": "doctrine/mongodb",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/mongodb.git",
-                "reference": "ac63fdf9847a5ec6d44721526623e8bddaa25fe6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/mongodb/zipball/ac63fdf9847a5ec6d44721526623e8bddaa25fe6",
-                "reference": "ac63fdf9847a5ec6d44721526623e8bddaa25fe6",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/common": ">=2.1.0,<2.5-dev",
-                "ext-mongo": ">=1.2.12,<1.6-dev",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "jmikola/geojson": "~1.0"
-            },
-            "suggest": {
-                "jmikola/geojson": "Support GeoJSON geometry objects in 2dsphere queries"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\MongoDB": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bulat Shakirzyanov",
-                    "email": "mallluhuct@gmail.com",
-                    "homepage": "http://avalanche123.com"
-                },
-                {
-                    "name": "Jonathan H. Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Kris Wallsmith",
-                    "email": "kris.wallsmith@gmail.com",
-                    "homepage": "http://kriswallsmith.net/"
-                },
-                {
-                    "name": "Jeremy Mikola",
-                    "email": "jmikola@gmail.com",
-                    "homepage": "http://jmikola.net"
-                }
-            ],
-            "description": "Doctrine MongoDB Abstraction Layer",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "database",
-                "mongodb",
-                "persistence"
-            ],
-            "time": "2014-01-09 21:24:02"
-        },
-        {
-            "name": "doctrine/mongodb-odm",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/mongodb-odm.git",
-                "reference": "dec2bdaabae36a4e84698ba944bfad2bfa2a539f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/mongodb-odm/zipball/dec2bdaabae36a4e84698ba944bfad2bfa2a539f",
-                "reference": "dec2bdaabae36a4e84698ba944bfad2bfa2a539f",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/annotations": "~1.0",
-                "doctrine/cache": "~1.0",
-                "doctrine/collections": "~1.1",
-                "doctrine/common": "2.4.*",
-                "doctrine/inflector": "~1.0",
-                "doctrine/mongodb": "~1.1",
-                "php": ">=5.3.2",
-                "symfony/console": "~2.0"
-            },
-            "require-dev": {
-                "symfony/yaml": "~2.0"
-            },
-            "suggest": {
-                "symfony/yaml": "Enables the YAML metadata mapping driver"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\ODM\\MongoDB": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bulat Shakirzyanov",
-                    "email": "mallluhuct@gmail.com",
-                    "homepage": "http://avalanche123.com"
-                },
-                {
-                    "name": "Jonathan H. Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Kris Wallsmith",
-                    "email": "kris.wallsmith@gmail.com",
-                    "homepage": "http://kriswallsmith.net/"
-                },
-                {
-                    "name": "Jeremy Mikola",
-                    "email": "jmikola@gmail.com",
-                    "homepage": "http://jmikola.net"
-                }
-            ],
-            "description": "Doctrine MongoDB Object Document Mapper",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "database",
-                "mongodb",
-                "odm",
-                "persistence"
-            ],
-            "time": "2014-01-28 19:07:20"
-        },
-        {
             "name": "doctrine/orm",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "9b7e949025fee7bc48ec5acb4af2a36a38979bdd"
+                "reference": "9653213914db5742ef73951013df1c1f0a0059cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/9b7e949025fee7bc48ec5acb4af2a36a38979bdd",
-                "reference": "9b7e949025fee7bc48ec5acb4af2a36a38979bdd",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/9653213914db5742ef73951013df1c1f0a0059cb",
+                "reference": "9653213914db5742ef73951013df1c1f0a0059cb",
                 "shasum": ""
             },
             "require": {
@@ -1054,7 +835,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-01-25 16:36:54"
+            "time": "2014-02-03 23:02:09"
         },
         {
             "name": "fzaninotto/faker",
@@ -1062,12 +843,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "459049684378aa6c6a8d5d445815cf11224c3c2f"
+                "reference": "6bc40f81096daedc809b6ea6d54cd0c1a6146819"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/459049684378aa6c6a8d5d445815cf11224c3c2f",
-                "reference": "459049684378aa6c6a8d5d445815cf11224c3c2f",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/6bc40f81096daedc809b6ea6d54cd0c1a6146819",
+                "reference": "6bc40f81096daedc809b6ea6d54cd0c1a6146819",
                 "shasum": ""
             },
             "require": {
@@ -1100,7 +881,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2014-01-27 16:59:31"
+            "time": "2014-01-30 17:51:10"
         },
         {
             "name": "hounddog/doctrine-data-fixture-module",
@@ -1271,7 +1052,7 @@
                 {
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/",
+                    "homepage": "http://marco-pivetta.com/",
                     "role": "Developer"
                 },
                 {
@@ -1297,12 +1078,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "47e82eadf64a81e0a778c7249c7292987f1bfcff"
+                "reference": "ce1d9d51cbb9f7c5d8b7b43ab93673cda4f2e5bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/47e82eadf64a81e0a778c7249c7292987f1bfcff",
-                "reference": "47e82eadf64a81e0a778c7249c7292987f1bfcff",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ce1d9d51cbb9f7c5d8b7b43ab93673cda4f2e5bd",
+                "reference": "ce1d9d51cbb9f7c5d8b7b43ab93673cda4f2e5bd",
                 "shasum": ""
             },
             "require": {
@@ -1341,7 +1122,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-24 14:36:35"
+            "time": "2014-02-03 17:15:42"
         },
         {
             "name": "symfony/process",
@@ -1350,12 +1131,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "d4b086ca4d6e192d8c2c64fe011159c8bc4c9daa"
+                "reference": "8a11fc068dc1d6967ba2a2415ea529cb4822bea0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/d4b086ca4d6e192d8c2c64fe011159c8bc4c9daa",
-                "reference": "d4b086ca4d6e192d8c2c64fe011159c8bc4c9daa",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/8a11fc068dc1d6967ba2a2415ea529cb4822bea0",
+                "reference": "8a11fc068dc1d6967ba2a2415ea529cb4822bea0",
                 "shasum": ""
             },
             "require": {
@@ -1388,7 +1169,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:29:57"
+            "time": "2014-02-03 17:15:42"
         },
         {
             "name": "zendframework/zend-developer-tools",
@@ -1457,12 +1238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zf2.git",
-                "reference": "f0f304ce1b0a0819498d4de088ed2a2e1b985d71"
+                "reference": "95e1d9082592c4eb59adc1158267ec7c7385a389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf2/zipball/f0f304ce1b0a0819498d4de088ed2a2e1b985d71",
-                "reference": "f0f304ce1b0a0819498d4de088ed2a2e1b985d71",
+                "url": "https://api.github.com/repos/zendframework/zf2/zipball/95e1d9082592c4eb59adc1158267ec7c7385a389",
+                "reference": "95e1d9082592c4eb59adc1158267ec7c7385a389",
                 "shasum": ""
             },
             "require": {
@@ -1567,7 +1348,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2014-01-28 20:12:54"
+            "time": "2014-02-03 22:01:34"
         },
         {
             "name": "zendframework/zftool",
@@ -1745,12 +1526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-apigility-admin.git",
-                "reference": "694eab6df956fdd6e655d428cd0e2ea08b53af4e"
+                "reference": "fc2dfe9a28b3089201adcbd22cab8a5aba893f27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin/zipball/694eab6df956fdd6e655d428cd0e2ea08b53af4e",
-                "reference": "694eab6df956fdd6e655d428cd0e2ea08b53af4e",
+                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin/zipball/fc2dfe9a28b3089201adcbd22cab8a5aba893f27",
+                "reference": "fc2dfe9a28b3089201adcbd22cab8a5aba893f27",
                 "shasum": ""
             },
             "require": {
@@ -1760,6 +1541,7 @@
                 "zendframework/zendframework": "~2.3-dev",
                 "zfcampus/zf-api-problem": "~1.0-dev",
                 "zfcampus/zf-apigility": "~1.0-dev",
+                "zfcampus/zf-apigility-provider": "~1.0-dev",
                 "zfcampus/zf-configuration": "~1.0-dev",
                 "zfcampus/zf-content-negotiation": "~1.0-dev",
                 "zfcampus/zf-content-validation": "~1.0-dev",
@@ -1771,7 +1553,9 @@
                 "zfcampus/zf-versioning": "~1.0-dev"
             },
             "require-dev": {
-                "phpunit/phpunit": "3.7.*"
+                "fabpot/php-cs-fixer": "*@dev",
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": ">=0.6.0"
             },
             "type": "library",
             "extra": {
@@ -1801,7 +1585,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2014-01-28 20:17:31"
+            "time": "2014-02-03 23:38:27"
         },
         {
             "name": "zfcampus/zf-apigility-doctrine",
@@ -1809,12 +1593,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/soliantconsulting/zf-apigility-doctrine.git",
-                "reference": "ef5e8df400d74e6918e89955d948d49121039252"
+                "reference": "94c80868a96c3f6b975db5ed358172571c716add"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/soliantconsulting/zf-apigility-doctrine/zipball/ef5e8df400d74e6918e89955d948d49121039252",
-                "reference": "ef5e8df400d74e6918e89955d948d49121039252",
+                "url": "https://api.github.com/repos/soliantconsulting/zf-apigility-doctrine/zipball/94c80868a96c3f6b975db5ed358172571c716add",
+                "reference": "94c80868a96c3f6b975db5ed358172571c716add",
                 "shasum": ""
             },
             "require": {
@@ -1856,7 +1640,56 @@
                 "apigility",
                 "doctrine"
             ],
-            "time": "2014-01-27 20:00:37"
+            "time": "2014-02-03 23:14:35"
+        },
+        {
+            "name": "zfcampus/zf-apigility-provider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zfcampus/zf-apigility-provider.git",
+                "reference": "bdfb62551b5abe2b299092ea30e5e5212f777846"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zfcampus/zf-apigility-provider/zipball/bdfb62551b5abe2b299092ea30e5e5212f777846",
+                "reference": "bdfb62551b5abe2b299092ea30e5e5212f777846",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ZF\\Apigility\\Provider\\": "src/",
+                    "ZFTest\\Apigility\\Provider\\": "test/"
+                },
+                "classmap": [
+                    "Module.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Apigility interfaces",
+            "homepage": "http://apigility.org/",
+            "keywords": [
+                "api",
+                "apigility",
+                "framework",
+                "zf2"
+            ],
+            "time": "2014-02-01 19:11:23"
         },
         {
             "name": "zfcampus/zf-apigility-welcome",
@@ -1962,12 +1795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-content-negotiation.git",
-                "reference": "76b577c2bb51f8dc4d33f5d1bf09701a53318d70"
+                "reference": "fed4c584189263d85b1396fe5ce3652d94cabbf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-content-negotiation/zipball/76b577c2bb51f8dc4d33f5d1bf09701a53318d70",
-                "reference": "76b577c2bb51f8dc4d33f5d1bf09701a53318d70",
+                "url": "https://api.github.com/repos/zfcampus/zf-content-negotiation/zipball/fed4c584189263d85b1396fe5ce3652d94cabbf9",
+                "reference": "fed4c584189263d85b1396fe5ce3652d94cabbf9",
                 "shasum": ""
             },
             "require": {
@@ -2005,7 +1838,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2014-01-17 22:25:43"
+            "time": "2014-02-03 14:01:02"
         },
         {
             "name": "zfcampus/zf-content-validation",
@@ -2130,12 +1963,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-mvc-auth.git",
-                "reference": "7bc24bf25b3260e0c4999ad490567eb476c727f4"
+                "reference": "e5541837f025e17e086f046b9c73a952d5e676dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-mvc-auth/zipball/7bc24bf25b3260e0c4999ad490567eb476c727f4",
-                "reference": "7bc24bf25b3260e0c4999ad490567eb476c727f4",
+                "url": "https://api.github.com/repos/zfcampus/zf-mvc-auth/zipball/e5541837f025e17e086f046b9c73a952d5e676dc",
+                "reference": "e5541837f025e17e086f046b9c73a952d5e676dc",
                 "shasum": ""
             },
             "require": {
@@ -2143,6 +1976,7 @@
                 "php": ">=5.4.8",
                 "zendframework/zendframework": "~2.3-dev",
                 "zfcampus/zf-api-problem": "~1.0-dev",
+                "zfcampus/zf-content-negotiation": "~1.0-dev",
                 "zfcampus/zf-oauth2": "~1.0-dev"
             },
             "require-dev": {
@@ -2173,7 +2007,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2014-01-28 21:45:40"
+            "time": "2014-02-03 21:33:34"
         },
         {
             "name": "zfcampus/zf-oauth2",

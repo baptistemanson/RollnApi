@@ -96,6 +96,24 @@ return array(
     'console' => array(
         'router' => array(
             'routes' => array(
+                'create-api-module' => array(
+                    'options' => array(
+                        'route' => 'build api module',
+                        'defaults' => array(
+                            'controller' => 'Application\Controller\Application',
+                            'action'     => 'apiModule',
+                        ),
+                    ),
+                ),
+                'create-api' => array(
+                    'options' => array(
+                        'route' => 'build api',
+                        'defaults' => array(
+                            'controller' => 'Application\Controller\Application',
+                            'action'     => 'api',
+                        ),
+                    ),
+                ),
                 'development-disable' => array(
                     'options' => array(
                         'route' => 'development disable',

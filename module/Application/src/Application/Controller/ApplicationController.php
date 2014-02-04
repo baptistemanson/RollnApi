@@ -145,6 +145,117 @@ class ApplicationController extends AbstractActionController
         $console->writeLine('All done! Tables have been dropped.', ColorInterface::GREEN);
     }
 
+    public function apiModuleAction()
+    {
+        $moduleName = 'DbApi';
+        $objectManagerAlias = 'doctrine.entitymanager.orm_default';
+        $routePrefix = 'api';
+        $useEntityNamespacesForRoute = true;
+
+        if($this->getServiceLocator()->get('Zend\ModuleManager\ModuleManager')->getModule($moduleName)){
+            $this->getConsole()->writeLine(sprintf(
+                'The %s is already loaded. If you want to build it again, delete the contents of /modules/%s',
+                $moduleName,
+                $moduleName
+            ), ColorInterface::YELLOW);
+            return;
+        }
+
+        // Build Module
+        $moduleResource = $this->getServiceLocator()->get('ZF\Apigility\Admin\Model\ModuleResource');
+        $moduleResource->setModulePath(realpath(__DIR__ . '/../../../../../'));
+
+        $metadata = $moduleResource->create(array(
+            'name' =>  $moduleName,
+        ));
+
+        return "$moduleName module has been created.\n";
+    }
+
+    public function apiAction()
+    {
+        $moduleName = 'DbApi';
+        $objectManagerAlias = 'doctrine.entitymanager.orm_default';
+        $routePrefix = 'api';
+        $useEntityNamespacesForRoute = false;
+
+        if(!$this->getServiceLocator()->get('Zend\ModuleManager\ModuleManager')->getModule($moduleName)){
+            $this->getConsole()->writeLine(sprintf(
+                'Module %s is not loaded. Did you forget to run "./abe build api module" ?',
+                $moduleName
+            ), ColorInterface::YELLOW);
+            return;
+        }
+
+        // Build resources
+        $objectManager = $this->getServiceLocator()->get($objectManagerAlias);
+        $metadataFactory = $objectManager->getMetadataFactory();
+
+        foreach($metadataFactory->getAllMetadata() as $metadata) {
+            if (substr($metadata->getName(), strlen($metadata->namespace) + 1, 8) == 'Abstract')
+                continue;
+            $entityClassNames[] = $metadata->getName();
+        }
+
+        // Get the route prefix and remove any / from ends of string
+        if (!$routePrefix) {
+            $routePrefix = '';
+        } else {
+            while(substr($routePrefix, 0, 1) == '/') {
+                $routePrefix = substr($routePrefix, 1);
+            }
+
+            while(substr($routePrefix, strlen($routePrefix) - 1) == '/') {
+                $routePrefix = substr($routePrefix, 0, strlen($routePrefix) - 1);
+            }
+        }
+
+        $objectManager = $this->getServiceLocator()->get($objectManagerAlias);
+        $metadataFactory = $objectManager->getMetadataFactory();
+
+        $serviceResource = $this->getServiceLocator()->get('ZF\Apigility\Doctrine\Admin\Model\DoctrineRestServiceResource');
+
+        // Generate a session id for results on next page
+        $results = [];
+        foreach ($metadataFactory->getAllMetadata() as $entityMetadata) {
+            if (!in_array($entityMetadata->name, $entityClassNames)) continue;
+
+            $resourceName = substr($entityMetadata->name, strlen($entityMetadata->namespace) + 1);
+
+            if (sizeof($entityMetadata->identifier) !== 1) {
+                throw new \Exception($entityMetadata->name . " does not have exactly one identifier and cannot be generated");
+            }
+
+            $filter = new FilterChain();
+            $filter->attachByName('WordCamelCaseToUnderscore')
+                   ->attachByName('StringToLower');
+
+            if ($useEntityNamespacesForRoute) {
+                $route = '/' . $routePrefix . '/' . $filter(str_replace('\\', '/', $entityMetadata->name));
+            } else {
+                $route = '/' . $routePrefix . '/' . $filter($resourceName);
+            }
+
+            $hydratorName = $moduleName . '\\V1\\Rest\\' . $resourceName . '\\' . $resourceName . 'Hydrator';
+
+            $serviceResource->setModuleName($moduleName);
+            $serviceResource->create(array(
+                'objectManager' => $objectManagerAlias,
+                'resourceName' => $resourceName,
+                'entityClass' => $entityMetadata->name,
+                'pageSizeParam' => 'limit',
+                'identifierName' => $filter($resourceName) . '_id',
+                'entityIdentifierName' => array_pop($entityMetadata->identifier),
+                'routeMatch' => $route,
+                'hydratorName' => $hydratorName,
+                'hydrateByValue' => true,
+            ));
+
+            $results[$entityMetadata->name] = $route;
+        }
+
+        return (print_r($results, true) . "\nResources have been created.\n");
+    }
 
     /**
      * @return Console
