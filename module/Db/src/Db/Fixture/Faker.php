@@ -33,12 +33,8 @@ class Faker implements FixtureInterface
         $this->faker = $generator = \Faker\Factory::create();
         $populator = new \Faker\ORM\Doctrine\Populator($generator, $manager);
 
-        $populator->addEntity('Db\Entity\User', 100);
-        $populator->addEntity('Db\Entity\OAuthToken', 1000);
-        $populator->addEntity('Db\Entity\GithubAccount', 1000);
-        $populator->addEntity('Db\Entity\MonitorEvent', 1000);
-        $populator->addEntity('Db\Entity\GithubRepository', 1000);
-        $populator->addEntity('Db\Entity\UseEvent', 1000);
+        $populator->addEntity('Db\Entity\Artist', 100);
+        $populator->addEntity('Db\Entity\Album', 1000);
 
         $populator->execute();
     }
