@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
-<orm-designer version="2.2.1.736" name="RollNApi" mvc="Without MVC" orm="Doctrine2" uuid="09c94d6b-1592-49e6-8ffa-58dd6621f1e4">
+<orm-designer version="2.2.8.792" name="RollNApi" mvc="Without MVC" orm="Doctrine2" uuid="09c94d6b-1592-49e6-8ffa-58dd6621f1e4">
   <module name="Db" import-format="Doctrine2Xml" import-path="../module/Db/config/xml" uuid="30851194-2020-4670-afa0-aba4a3feb3e9">
+    <entity name="Artist" uuid="4817d5c2-30b0-4934-8654-c4c7896ccdfb">
+      <field name="id" type="integer" required="true" unique="true" primary="true" auto-increment="true" uuid="176b2f1e-5fa0-4866-834b-84e606eb7859"/>
+      <field name="name" type="string" uuid="a82fbb1c-e435-47dc-a824-24c0c0f2138e"/>
+    </entity>
+    <entity name="Album" uuid="cbe4bfc5-1887-473a-b716-09fc155dc569">
+      <field name="id" type="integer" required="true" unique="true" primary="true" auto-increment="true" uuid="6c39cd27-364a-4d39-bcad-9ef5fd949637"/>
+      <field name="name" type="string" uuid="35a6b1ed-80fe-423d-99b3-f2e927d21119"/>
+      <field name="artist_id" type="integer" required="true" uuid="33e25a8a-1ee7-4150-a09a-a6258e4e9793"/>
+    </entity>
+    <association from="Album" to="Artist" caption="Artist Album" owner-alias="album" inverse-alias="artist" uuid="c163381d-a749-4c2b-ba54-20a9ab4fd839">
+      <association-field from="artist_id" to="id"/>
+    </association>
     <orm-attributes>
       <attribute name="namespace">Db\Entity</attribute>
     </orm-attributes>
@@ -8,5 +20,8 @@
   <visual-data>
     <project uuid="09c94d6b-1592-49e6-8ffa-58dd6621f1e4" size-x="0" size-x2="809" size-y="0" size-y2="633"/>
     <module uuid="30851194-2020-4670-afa0-aba4a3feb3e9" bk-color="4294638066" position-x="61" position-y="72" size-x="11" size-x2="713" size-y="22" size-y2="527"/>
+    <entity uuid="4817d5c2-30b0-4934-8654-c4c7896ccdfb" position-x="66" position-y="36" size-x="0" size-x2="20" size-y="0" size-y2="20"/>
+    <association uuid="c163381d-a749-4c2b-ba54-20a9ab4fd839" caption1-position-x="0" caption1-position-y="0" center-position-x="0" center-position-y="0"/>
+    <entity uuid="cbe4bfc5-1887-473a-b716-09fc155dc569" position-x="235" position-y="143" size-x="0" size-x2="20" size-y="0" size-y2="20"/>
   </visual-data>
 </orm-designer>

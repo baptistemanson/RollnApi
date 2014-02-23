@@ -90,7 +90,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -109,7 +109,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -232,7 +232,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -251,7 +251,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -268,16 +268,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "2.4.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "9a7e20e779360f3b8a02c27a89d47d5a6fdce8d1"
+                "reference": "64e2a6ae51db05a1ea0525913ed0dcccdc523f01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/9a7e20e779360f3b8a02c27a89d47d5a6fdce8d1",
-                "reference": "9a7e20e779360f3b8a02c27a89d47d5a6fdce8d1",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/64e2a6ae51db05a1ea0525913ed0dcccdc523f01",
+                "reference": "64e2a6ae51db05a1ea0525913ed0dcccdc523f01",
                 "shasum": ""
             },
             "require": {
@@ -288,10 +288,13 @@
                 "doctrine/lexer": "1.*",
                 "php": ">=5.3.2"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4.x-dev"
+                    "dev-master": "2.5.x-dev"
                 }
             },
             "autoload": {
@@ -305,7 +308,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -324,7 +327,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -339,7 +342,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2014-02-03 23:31:47"
+            "time": "2014-02-04 07:51:26"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -399,35 +402,30 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "dev-master",
+            "version": "2.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "ca6a8dd20f3e8c1ad5fadaac8eac4547c081cf3b"
+                "reference": "1770ffa86bf74592e97ddb4a4ef249efff1537db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/ca6a8dd20f3e8c1ad5fadaac8eac4547c081cf3b",
-                "reference": "ca6a8dd20f3e8c1ad5fadaac8eac4547c081cf3b",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/1770ffa86bf74592e97ddb4a4ef249efff1537db",
+                "reference": "1770ffa86bf74592e97ddb4a4ef249efff1537db",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "2.4.*",
+                "doctrine/common": "~2.4",
                 "php": ">=5.3.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*",
-                "symfony/console": "2.*"
+                "symfony/console": "~2.0"
             },
             "suggest": {
                 "symfony/console": "Allows use of the command line interface"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.5.x-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Doctrine\\DBAL\\": "lib/"
@@ -439,7 +437,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -466,7 +464,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-02-16 21:36:04"
+            "time": "2014-02-08 09:04:35"
         },
         {
             "name": "doctrine/doctrine-module",
@@ -668,7 +666,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -687,7 +685,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -746,7 +744,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -762,28 +760,28 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "dev-master",
+            "version": "2.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "dfe7a68053b20b59bd92f83da20943af22519772"
+                "reference": "a949e87ca88299cde368d2b574740753526b62c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/dfe7a68053b20b59bd92f83da20943af22519772",
-                "reference": "dfe7a68053b20b59bd92f83da20943af22519772",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/a949e87ca88299cde368d2b574740753526b62c9",
+                "reference": "a949e87ca88299cde368d2b574740753526b62c9",
                 "shasum": ""
             },
             "require": {
                 "doctrine/collections": "~1.1",
-                "doctrine/dbal": ">=2.5-dev,<2.6-dev",
+                "doctrine/dbal": "~2.4",
                 "ext-pdo": "*",
                 "php": ">=5.3.2",
-                "symfony/console": "2.*"
+                "symfony/console": "~2.0"
             },
             "require-dev": {
                 "satooshi/php-coveralls": "dev-master",
-                "symfony/yaml": "2.1"
+                "symfony/yaml": "~2.1"
             },
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
@@ -795,7 +793,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.x-dev"
+                    "dev-master": "2.4.x-dev"
                 }
             },
             "autoload": {
@@ -834,7 +832,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-02-19 21:02:07"
+            "time": "2014-02-09 14:45:36"
         },
         {
             "name": "fzaninotto/faker",
@@ -1180,12 +1178,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendDeveloperTools.git",
-                "reference": "99481023c6aa4c276c652a508c0a996f1a954327"
+                "reference": "b577e10f92cb449cf70cfa1b6d069ee8acbe7b21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/99481023c6aa4c276c652a508c0a996f1a954327",
-                "reference": "99481023c6aa4c276c652a508c0a996f1a954327",
+                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/b577e10f92cb449cf70cfa1b6d069ee8acbe7b21",
+                "reference": "b577e10f92cb449cf70cfa1b6d069ee8acbe7b21",
                 "shasum": ""
             },
             "require": {
@@ -1233,7 +1231,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2014-02-05 16:01:28"
+            "time": "2014-02-20 14:58:50"
         },
         {
             "name": "zendframework/zendframework",
@@ -1241,12 +1239,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zf2.git",
-                "reference": "70b647028e1fd872459d1bdf53b45c9e31fe6515"
+                "reference": "349d5f77a1b81d135ca48f3db71f8690b8c0e94b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf2/zipball/70b647028e1fd872459d1bdf53b45c9e31fe6515",
-                "reference": "70b647028e1fd872459d1bdf53b45c9e31fe6515",
+                "url": "https://api.github.com/repos/zendframework/zf2/zipball/349d5f77a1b81d135ca48f3db71f8690b8c0e94b",
+                "reference": "349d5f77a1b81d135ca48f3db71f8690b8c0e94b",
                 "shasum": ""
             },
             "require": {
@@ -1351,7 +1349,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2014-02-19 22:32:00"
+            "time": "2014-02-22 07:58:08"
         },
         {
             "name": "zendframework/zftool",
@@ -1529,12 +1527,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-apigility-admin.git",
-                "reference": "743a5a822f066a95b2a300d8d16732a6e3db3a15"
+                "reference": "13fa11176deb3cfa18c4e463721198fcce1fddcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin/zipball/743a5a822f066a95b2a300d8d16732a6e3db3a15",
-                "reference": "743a5a822f066a95b2a300d8d16732a6e3db3a15",
+                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin/zipball/13fa11176deb3cfa18c4e463721198fcce1fddcc",
+                "reference": "13fa11176deb3cfa18c4e463721198fcce1fddcc",
                 "shasum": ""
             },
             "require": {
@@ -1588,7 +1586,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2014-02-14 17:03:49"
+            "time": "2014-02-21 22:46:16"
         },
         {
             "name": "zfcampus/zf-apigility-doctrine-admin",
@@ -1596,12 +1594,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/soliantconsulting/zf-apigility-doctrine-admin.git",
-                "reference": "1aa2141232cc01a4ec543d252f1de2192a4e66d2"
+                "reference": "e71278d92725b2ae3cfe57642e78f92cde631b71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/soliantconsulting/zf-apigility-doctrine-admin/zipball/1aa2141232cc01a4ec543d252f1de2192a4e66d2",
-                "reference": "1aa2141232cc01a4ec543d252f1de2192a4e66d2",
+                "url": "https://api.github.com/repos/soliantconsulting/zf-apigility-doctrine-admin/zipball/e71278d92725b2ae3cfe57642e78f92cde631b71",
+                "reference": "e71278d92725b2ae3cfe57642e78f92cde631b71",
                 "shasum": ""
             },
             "require": {
@@ -1643,7 +1641,7 @@
                 "apigility",
                 "doctrine"
             ],
-            "time": "2014-02-14 04:41:24"
+            "time": "2014-02-20 19:33:01"
         },
         {
             "name": "zfcampus/zf-apigility-doctrine-server",

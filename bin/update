@@ -68,14 +68,14 @@ then
 			fi
 
 			echo "Using local composer.phar"
-			php ./composer.phar install --dev
+			php ./composer.phar install --dev --prefer-dist
 		else
 			echo "Using global installation of composer."
-			composer install --dev
+			composer install --dev --prefer-dist
 		fi
 	else
 		echo "Using local composer.phar"
-		php ./composer.phar install --dev
+		php ./composer.phar install --dev --prefer-dist
 	fi
 
 	if [[ "$?" != "0" ]]

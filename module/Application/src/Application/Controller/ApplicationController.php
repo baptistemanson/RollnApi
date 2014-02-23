@@ -117,21 +117,7 @@ class ApplicationController extends AbstractActionController
 
         // Truncate tables
         try {
-            $console->writeLine('- Disabling foreign key checks');
-            $objectManager->getConnection()->executeQuery('SET FOREIGN_KEY_CHECKS=0');
-
-            $console->write('- Dropping tables ');
-            foreach($tables as $table){
-                $objectManager->getConnection()->executeQuery(sprintf(
-                    'DROP TABLE IF EXISTS %s',
-                    $objectManager->getConnection()->quoteIdentifier($table)
-                ));
-                $console->write('.', ColorInterface::GREEN);
-            }
-            $console->writeLine(' done!', ColorInterface::GREEN);
-
-            $console->writeLine('- Re-enabling foreign key checks');
-            $objectManager->getConnection()->executeQuery('SET FOREIGN_KEY_CHECKS=1');
+            unlink(__DIR__ . '/../../../../../data/Database/rollnapi.db');
         }catch(DBALException $e){
             $console->writeLine();
             $console->writeLine(sprintf(
