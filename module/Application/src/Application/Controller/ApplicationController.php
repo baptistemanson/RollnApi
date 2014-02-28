@@ -117,8 +117,15 @@ class ApplicationController extends AbstractActionController
 
         // Truncate tables
         try {
-            unlink(__DIR__ . '/../../../../../data/Database/rollnapi.db');
-        }catch(DBALException $e){
+		$connection = $objectManager->getConnection();
+		$connection->beginTransaction();
+    		//$connection->query('SET FOREIGN_KEY_CHECKS=0');
+                foreach($tables as $table) {
+    			$connection->getSchemaManager()->dropTable($table);
+		}
+    		//$connection->query('SET FOREIGN_KEY_CHECKS=1');
+    		$connection->commit();
+        }catch(\Exception $e){
             $console->writeLine();
             $console->writeLine(sprintf(
                 "A DB exception occured!\n%s: %s",
